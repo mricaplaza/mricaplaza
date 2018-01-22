@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ositions</title>
+        <style>
+            .boxes{
+                width:100x;
+                height:100px;
+                background-color:red;
+                margin:5px;
+                display:block;
+            }
+            #relBox{
+                position:relative;
+                left:10px;
+                top:30px;
+            }
+            
+            #absBox {
+                background-color:blue;
+                position:absolute;
+                right:20px;
+                bottom:10px;
+            }
+        
+        #insideBox {
+            width:50px;
+            height:50px;
+            background-color:yellow;
+            position:absolute;
+            right:-25px;
+            top:-25px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="boxes"></div>
+        <div class="boxes" id="relBox">
+            <div id="insideBox"></div>
+        </div>
+        <div class="boxes" id="absBox"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+    </body>
+</html>
