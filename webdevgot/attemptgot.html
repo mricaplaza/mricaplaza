@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Great Houses Info</title>
+		<style>	
+			#myBG {
+				position:absolute;
+				left:0px;
+				top:0px;
+				width:100vw;
+				height:100%;
+				background-size:cover;
+				background-position:center;
+			}
+			
+			#controls {
+				position:absolute;
+				left:120px;
+				top:.5vh;
+			}
+			
+			#img1 {
+				background-image:url(Arryn.png);
+				
+			}
+			#img2 {
+				background-image:url(Frey.png);
+			}
+			
+			#img3 {
+				background-image:url(Greyjoy.png);
+			}
+			
+			#img4 {
+				background-image:url(Lannister.png);
+			}
+			
+			#img5 {
+				background-image:url(Stark.png);
+			}
+			
+			#img6 {
+				background-image:url(Targaryen.png);
+			}
+			
+			.thumbnails {
+				width:90px;
+				height:90px;
+				background-color:red;
+				position:relative;
+				margin:10px;
+				background-size:cover;
+				background-position:center;
+				opacity:0.5;
+				border-radius:90px;
+				border:2px solid #FFF;
+				transition:opacity 2s;
+				
+			}
+			
+			.thumbnails:hover {
+				opacity:1;
+			}
+			#info {
+				opacity:0;
+				position:absolute;
+				left:0px;
+				right:0px;
+				top:0px;
+				bottom:0px;
+				margin:auto;
+				height:50vh;
+				width:50vw;
+				background-color:rgba(255,255,255,0.5);
+				transition:opacity 1s;
+			}
+			
+			#infoimg {
+				width:100%;
+				height:80%;
+				background-size:cover;
+			}
+			
+			#infotext {
+				width:100%;
+				height:20%;
+				padding:5px;
+			}
+			
+			#close {
+				position:absolute;
+				width:15px;
+				height:15px;
+				border-radius:15px;
+				background-color:black;
+				color:#FFF;
+				left:-12px;
+				top:-12px;
+				padding:5px;
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<video id="myBG" autoplay loop>
+			<source src="got.mp4"/>
+		</video>
+		<div id="controls">
+			<div id="img1" class="thumbnails"></div>
+			<div id="img2" class="thumbnails"></div>
+			<div id="img3" class="thumbnails"></div>
+			<div id="img4" class="thumbnails"></div>
+			<div id="img5" class="thumbnails"></div>
+			<div id="img6" class="thumbnails"></div>
+		</div>
+		
+		<div id="info">
+			<div id="infoimg"></div>
+			<div id="infotext"></div>
+			<div id="close">X</div>
+		</div>
+		
+		<script>
+			document.getElementById("img1").addEventListener("click", function(){
+				document.getElementById("infoimg").style.backgroundImage = 
+				"url(arryninfoimg.png)";
+				document.getElementById("infoimg").style.backgroundSize = "cover";
+				document.getElementById("infoimg").style.backgroundPosition = "center top";
+				document.getElementById("info").style.opacity = 1;
+				document.getElementById("infotext").innerHTML = "House Arryn- As High as Honor";
+			});
+			
+			document.getElementById("img2").addEventListener("click", function(){
+				document.getElementById("infoimg").style.backgroundImage = 
+				"url(freyinfoimg.jpg)";
+				document.getElementById("infoimg").style.backgroundSize = "cover";
+				document.getElementById("infoimg").style.backgroundPosition = "center top";
+				document.getElementById("info").style.opacity = 1;
+				document.getElementById("infotext").innerHTML = "House Frey- We Stand Together";
+			});
+			
+			document.getElementById("img3").addEventListener("click", function(){
+				document.getElementById("infoimg").style.backgroundImage = 
+				"url(greyjoyinfoimg.jpg)";
+				document.getElementById("infoimg").style.backgroundSize = "cover";
+				document.getElementById("infoimg").style.backgroundPosition = "center top";
+				document.getElementById("info").style.opacity = 1;
+				document.getElementById("infotext").innerHTML = "House Greyjoy- We Do Not Sow";
+			});
+			
+			document.getElementById("img4").addEventListener("click", function(){
+				document.getElementById("infoimg").style.backgroundImage = 
+				"url(lannisterinfoimg.jpg)";
+				document.getElementById("infoimg").style.backgroundSize = "cover";
+				document.getElementById("infoimg").style.backgroundPosition = "center top";
+				document.getElementById("info").style.opacity = 1;
+				document.getElementById("infotext").innerHTML = "House Lannister- A Lannister Always Pays His Debts";
+			});
+			
+			document.getElementById("img5").addEventListener("click", function(){
+				document.getElementById("infoimg").style.backgroundImage = 
+				"url(starkinfoimg.jpg)";
+				document.getElementById("infoimg").style.backgroundSize = "cover";
+				document.getElementById("infoimg").style.backgroundPosition = "center top";
+				document.getElementById("info").style.opacity = 1;
+				document.getElementById("infotext").innerHTML = "House Stark- Winter is Coming";
+			});
+			
+			document.getElementById("img6").addEventListener("click", function(){
+				document.getElementById("infoimg").style.backgroundImage = 
+				"url(targaryeninfoimg.jpg)";
+				document.getElementById("infoimg").style.backgroundSize = "cover";
+				document.getElementById("infoimg").style.backgroundPosition = "center top";
+				document.getElementById("info").style.opacity = 1;
+				document.getElementById("infotext").innerHTML = "House Targaryen- Fire and Blood";
+			});
+			
+			document.getElementById("close").addEventListener("click", function(){ 
+				document.getElementById("info").style.opacity = 0;
+			});
+		</script>
+	</body>
+</html>
