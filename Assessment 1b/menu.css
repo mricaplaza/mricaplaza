@@ -1,0 +1,94 @@
+#menu {
+    position:fixed;
+    left:-110px;
+    top:50px;
+    width:110px;
+    padding:5px;
+    background-color:pink;
+}
+
+.menuButtons1 {
+    width:100%;  
+}
+
+.menuButtons2 {
+    position:absolute;
+    width:50px;
+    right:-50px;
+}
+
+#open {
+    top:0px;
+}
+
+#close {
+    bottom:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bg {
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100vw;
+    height:100vh;
+    z-index:-1;
+    background-size:cover;
+    background-position:bottom;
+    
+}
+
+#makeBg {
+    
+    
+}
+#showApp {
+    display:block;
+}
+
+#hideApp {
+    display:none;
+}

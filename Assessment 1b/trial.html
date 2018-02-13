@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Assessment 1</title>
+    <link href="index.css" rel="stylesheet"
+        type="text/css" />
+    <link href="menu.css" rel="stylesheet"
+        type="text/css" />
+    </head>
+    <body>
+    <div id="bg"></div>
+    <div id="app1">
+        <div id="zoom">
+            <div id="zoomControls">
+                <button id="zoomIn" class="zoomControlsButtons">+</button>
+                <button id="zoomOut" class="zoomControlsButtons">-</button>
+            </div>      
+        </div>
+        <div id="controls">
+            <button id="previous">Previous</button>
+            <button id="bg1">BG1</button>
+            <button id="bg2">BG2</button>
+            <button id="bg3">BG3</button>
+            <button id="bg4">BG4</button>
+            <button id="next">Next</button>
+            <br/>
+            <div id="ch1" class="bgthumbs"></div>
+            <div id="ch2" class="bgthumbs"></div>
+            <div id="ch3" class="bgthumbs"></div>     
+        </div>
+    </div>
+    <div id="menu">
+        <button id="makeBg" class="menuButtons1">Make BG</button>
+        <button id="reset" class="menuButtons1">Reset</button>
+        <button id="hideApp" class="menuButtons1">Hide App</button>
+        <button id="showApp" class="menuButtons1">Show App</button>
+        <button id="open" class="menuButtons2">Open</button> 
+        <button id="close" class="menuButtons2">Close</button>
+    </div>
+    <script>
+    var bgImg = document.getElementById("zoom").style.backgroundImage;
+   
+    document.getElementById("open").addEventListener("click", function(){
+    document.getElementById("menu").style.left = "0px";
+    });
+    
+    document.getElementById("close").addEventListener("click", function(){
+    document.getElementById("menu").style.left = "-110px";
+    });
+
+    document.getElementById("makeBg").addEventListener("click", function(){
+    document.getElementById("bg").style.backgroundImage = document.getElementById("zoom").style.backgroundImage;
+    });
+    
+    document.getElementById("reset").addEventListener("click", function(){
+    document.getElementById("bg").style.display = "none";
+    }); 
+    
+    document.getElementById("showApp").addEventListener("click", function(){
+    document.getElementById("app1").style.display = "block";
+    }); 
+    
+    document.getElementById("hideApp").addEventListener("click", function(){
+    document.getElementById("app1").style.display = "none";
+    }); 
+    
+    var zoomImg = document.getElementById("zoom").style.backgroundImage;
+    var width = 100;
+    var height = 100;
+    
+    document.getElementById("bg1").addEventListener("click", function(){
+    document.getElementById("ch1").style.backgroundImage = "url(i1.jpg)";
+    document.getElementById("ch1").style.backgroundSize = "cover";
+    document.getElementById("ch1").style.backgroundPosition = "center";
+    });
+    
+    document.getElementById("bg1").addEventListener("click", function(){
+    document.getElementById("ch2").style.backgroundImage = "url(i2.jpg)";
+    document.getElementById("ch2").style.backgroundSize = "cover";
+    document.getElementById("ch2").style.backgroundPosition = "center";
+    });
+
+    document.getElementById("bg1").addEventListener("click", function(){
+    document.getElementById("ch3").style.backgroundImage = "url(i3.jpg)";
+    document.getElementById("ch3").style.backgroundSize = "cover";
+    document.getElementById("ch3").style.backgroundPosition = "center";
+    });
+
+    document.getElementById("bg2").addEventListener("click", function(){
+    document.getElementById("ch1").style.backgroundImage = "url(i4.jpg)";
+    document.getElementById("ch1").style.backgroundSize = "cover";
+    document.getElementById("ch1").style.backgroundPosition = "center";
+    });
+    
+    document.getElementById("bg2").addEventListener("click", function(){
+    document.getElementById("ch2").style.backgroundImage = "url(i5.jpg)";
+    document.getElementById("ch2").style.backgroundSize = "cover";
+    document.getElementById("ch2").style.backgroundPosition = "center";
+    });
+
+    document.getElementById("bg2").addEventListener("click", function(){
+    document.getElementById("ch3").style.backgroundImage = "url(i6.jpg)";
+    document.getElementById("ch3").style.backgroundSize = "cover";
+    document.getElementById("ch3").style.backgroundPosition = "center";
+    });
+    
+    document.getElementById("bg3").addEventListener("click", function(){
+    document.getElementById("ch1").style.backgroundImage = "url(i7.jpg)";
+    document.getElementById("ch1").style.backgroundSize = "cover";
+    document.getElementById("ch1").style.backgroundPosition = "center";
+    });
+    document.getElementById("bg3").addEventListener("click", function(){
+    document.getElementById("ch2").style.backgroundImage = "url(i8.jpg)";
+    document.getElementById("ch2").style.backgroundSize = "cover";
+    document.getElementById("ch2").style.backgroundPosition = "center";
+    });
+
+    document.getElementById("bg3").addEventListener("click", function(){
+    document.getElementById("ch3").style.backgroundImage = "url(i9.jpg)";
+    document.getElementById("ch3").style.backgroundSize = "cover";
+    document.getElementById("ch3").style.backgroundPosition = "center";
+    }); 
+    
+    document.getElementById("bg4").addEventListener("click", function(){
+    document.getElementById("ch1").style.backgroundImage = "url(i10.jpg)";
+    document.getElementById("ch1").style.backgroundSize = "cover";
+    document.getElementById("ch1").style.backgroundPosition = "center";
+    });    
+    document.getElementById("bg4").addEventListener("click", function(){
+    document.getElementById("ch2").style.backgroundImage = "url(i11.jpg)";
+    document.getElementById("ch2").style.backgroundSize = "cover";
+    document.getElementById("ch2").style.backgroundPosition = "center";
+    });    
+    
+    document.getElementById("bg4").addEventListener("click", function(){
+    document.getElementById("ch3").style.backgroundImage = "url(i12.jpg)";
+    document.getElementById("ch3").style.backgroundSize = "cover";
+    document.getElementById("ch3").style.backgroundPosition = "center";
+    });  
+
+    document.getElementById("ch1").addEventListener("mouseenter", function(){
+    document.getElementById("zoom").style.backgroundImage = document.getElementById("ch1").style.backgroundImage;
+    document.getElementById("zoom").style.backgroundSize = "cover";
+    document.getElementById("zoom").style.backgroundPosition = "center";
+    });
+    
+    document.getElementById("ch2").addEventListener("mouseenter", function(){
+    document.getElementById("zoom").style.backgroundImage = document.getElementById("ch2").style.backgroundImage;
+    document.getElementById("zoom").style.backgroundSize = "cover";
+    document.getElementById("zoom").style.backgroundPosition = "center";
+    });
+    
+    document.getElementById("ch3").addEventListener("mouseenter", function(){
+    document.getElementById("zoom").style.backgroundImage = document.getElementById("ch3").style.backgroundImage;
+    document.getElementById("zoom").style.backgroundSize = "cover";
+    document.getElementById("zoom").style.backgroundPosition = "center";
+    });
+     
+    document.getElementById("zoomIn").addEventListener("click", function (){
+	width = width +10;
+    zoomImg.style.width = width+"%";
+	});
+
+    document.getElementById("zoomOut").addEventListener("click", function (){
+    height = height +7;
+    zoomImg.style.height = height+"%";
+	});
+    </script>
+    </body>
+</html>
