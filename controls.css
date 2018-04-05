@@ -1,0 +1,31 @@
+.controlButtons {
+    width: 50x;
+
+}
+
+.controlRange {
+    width: 60px;
+      
+}
+
+#rangeButton {
+    background-color: white;
+    
+}
+
+#numberButton {
+    background-color:black;
+    color: white;
+        
+}
+
+#randomButton{
+    background-color:pink;
+    
+}
+
+#plusButton{
+    background-color:gray;
+    color: white;
+    
+}
